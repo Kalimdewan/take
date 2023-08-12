@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,300;1,400&family=Oswald:wght@200;500&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(../inside_img/take-1.jpg)  no-repeat center;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+   /* background: yellowgreen;*/
+}
+
+/* back-to-top start */
+.back-to-top {
+    position: fixed;
+    bottom: 15px;
+    left: 10px;
+    display: none;
+}
+/* back-to-top ned */
+
+
+/*MENU start*/
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul a {
+    text-decoration: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    padding-top: 50px;
+}
+
+/*menu end*/
+
+
+
+/*hero part strt*/
+
+.hero-part {
+    /* background: url(../inside_img/02-Take-1.jpg) no-repeat center; */
+    height: 90vh;
+    background-size: cover;
+    padding: 150px 0;
+}
+.hero-content {
+    color: white;
+    padding: 0;
+}
+.hero-content p {
+    padding: 15px 0;
+    line-height: 35px;
+    text-align: justify;
+}
+.hero-content h1 {
+    text-align: justify;
+}
+
+.hero-content-main img {
+    width: 350px;
+    padding-left: 5px;
+}
+
+.hero-content-main img:hover {
+    /* box-shadow: rgba(17, 0, 110, 0.308) 0px 19px 38px, rgba(217, 0, 255, 0.22) 0px 15px 12px; */
+
+    box-shadow: rgb(104, 235, 255) 0px 2px 4px 0px, rgb(0, 19, 53) 0px 2px 16px 0px;
+    border-radius: 10%;
+}
+/*hero part end*/
+
+
+
+/*about part start*/
+.about-part {
+    padding-top: 100px;
+}
+.about-head-main {
+    display: flex;
+    justify-content: left;
+}
+.about-head {
+    padding-bottom: 10px;
+    /* text-transform: uppercase; */
+    line-height: 0;
+}
+.about-head h3 {
+    line-height: 20px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.about-head p {
+font-size: 10px;
+}
+.about-content child-p {
+    padding: 200px;
+}
+.about-content {
+    padding: 40px 20px 20px;
+}
+.about-content:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+
+    box-shadow: rgb(104, 235, 255) 0px 2px 4px 0px, rgb(0, 19, 53) 0px 2px 16px 0px;
+    border-radius: 2%;
+}
+/*about part end*/
+
+
+/*portfolio-part start*/
+.portfolio-part {
+    padding-top: 60px;
+}
+
+.portfolio-img img {
+    width: 100%;
+}
+.portfolio-img {
+    /*margin-top: 10px;*/
+    position: relative;
+    overflow: hidden;
+   border-radius: 2%;
+ }
+.portfolio-img:hover .portfolio-img-overlay {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    transform: scale(1);
+}
+.portfolio-img-overlay {
+    height: 100%;
+    width: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*right: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scale(0);
+}
+.portfolio-img-overlay a {
+    height: 40px;
+    width: 40px;
+    background: var(--color-2);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+}
+
+/*portfolio-part end*/
+
+/*service part start*/
+.sarvice-part {
+    padding-top: 100px;
+}
+.service-head-main{
+    display: flex;
+
+}
+.service-head {
+    padding-bottom: 20px;
+    line-height: 0;
+}
+.service-head h3 {
+    line-height: 30px;
+    margin-bottom: 0;
+    justify-content: left;
+}
+.service-content {
+    /* background: #f1f1f1; */
+    padding: 40px 20px 20px;
+    text-align: left;
+    position: relative;
+    transition: 0.4s;
+}
+.service-content p {
+    text-align: justify;
+}
+
+.service-content:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+
+    box-shadow: rgb(0, 221, 255) 0px 2px 4px 0px, rgb(0, 19, 53) 0px 2px 16px 0px;
+    border-radius: 5%;
+}
+/*service part end*/
+
+/*reasons1-part start*/
+.reasons1-part {
+    padding-top: 300px;
+    background: url(../inside_img/take-8.jpg) no-repeat center;
+    height: 350px;
+    color: whitesmoke;
+    background-size: cover;
+    padding-bottom: 250px;
+}
+
+.reasons1-content h3 {
+    text-align: left;
+    padding-left: 90px;
+}
+.reasons1-content p {
+    text-align: left;
+    padding-left: 90px;
+    padding-right: 620px;
+}
+
+/* ============================ */
+
+.reasons2-part {
+    padding-top: 50px;
+    /* background: url(../inside_img/02-Take-9.jpg) no-repeat center; */
+    background: #81c99b;
+    height: 420px;
+    color: whitesmoke;
+    background-size: cover;
+    padding-bottom: 250px;
+}
+
+.reasons2-content-main h4 {
+    text-align: left;
+    padding-left: 90px;
+    padding-bottom: 20px;
+}
+.reasons2-content1 h6 {
+    text-align: left;
+    padding-left: 90px;
+}
+.reasons2-content1 p {
+    text-align: left;
+    padding-left: 90px;
+}
+.reasons2-content1:hover {
+    box-shadow: rgb(0, 221, 255) 0px 2px 4px 0px, rgb(70, 138, 255) 0px 2px 16px 0px;
+    border-radius: 5%; 
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ======================================= */
+
+.reasons2-content2 h6 {
+    text-align: left;
+    /* padding-left: 120px; */
+}
+.reasons2-content2 p {
+    text-align: left;
+    /* padding-left: 120px;   */
+}
+
+.reasons2-content2:hover {
+    box-shadow: rgb(0, 67, 77) 0px 2px 4px 0px, rgb(0, 22, 61) 0px 2px 16px 0px;
+    border-radius: 5%; 
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 90px;
+
+}
+
+
+/* ======================================= */
+
+.reasons2-content3 h6 {
+    text-align: left;
+    /* padding-left: 120px; */
+}
+.reasons2-content3 p {
+    text-align: left;
+    /* padding-left: 120px;   */
+}
+
+.reasons2-content3:hover {
+    box-shadow: rgb(19, 0, 65) 0px 2px 4px 0px, rgb(123, 172, 255) 0px 2px 16px 0px;
+    border-radius: 5%; 
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 90px;
+
+}
+
+/* ======================================== */
+
+.team-part {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.team-content-main{
+    display: flex;
+    justify-content: center;
+}
+.team-head {
+    padding-bottom: 40px;
+    line-height: 0;
+}
+.team-head h5 {
+    line-height: 30px;
+    margin-bottom: 0;
+}
+.team-content {
+    width: 400px;
+    padding-left: 500px;
+    padding: 40px 20px 20px;
+    text-align: left;
+    position: relative;
+    transition: 0.4s;
+}
+.team-content p {
+    text-align: justify;
+}
+.team-content h5 {
+    padding-top: 20px;
+}
+.team-content button {
+    background: rgb(173, 173, 173);
+    border: none;
+    height: 25px;
+    font-size: 10px;
+}
+
+.button2 button {
+    background: #81c99b;
+    border: none;
+    height: 35px;
+    width: 170px;
+    font-size: 20px;
+}
+
+.button2 a i {
+    padding-top: 20px;
+    color: rgb(133, 133, 133);
+    font-size: 30px;
+}
+
+.team-content:hover {
+    box-shadow: rgb(0, 217, 255) 0px 2px 4px 0px, rgb(0, 94, 255) 0px 2px 16px 0px;
+    border-radius: 2%;
+    background: white;
+}
+/*team-part end*/
+
+
+/*contact-part start*/
+.contact-part {
+    padding-top: 80px;
+    background: #192331;
+    color: white;
+}
+.contact-content2 {
+    color: white;
+}
+.contact-content3 img {
+    width: 500px;
+    height: 50px;
+}
+
+.contact-content3 img:hover {
+    border-radius: 2%;
+    box-shadow: rgb(0, 96, 110) 0px 2px 4px 0px, rgb(0, 49, 133) 0px 2px 16px 0px;
+}
+.contact-content3 p {
+    color: rgb(100, 100, 100);
+}
+.contact-content-head {
+    display: flex;
+    padding-bottom: 50px;
+}
+.contact-content {
+    /* background: #f1f1f1; */
+    padding: 20px;
+    padding-left: 5px;
+    text-align: left;
+    transition: 0.4s;
+}
+.contact-content p {
+    text-align: justify;
+}
+
+.contact-content:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+
+    box-shadow: rgb(0, 221, 255) 0px 2px 4px 0px, rgb(0, 19, 53) 0px 2px 16px 0px;
+    border-radius: 5%;
+}
+/*contact part end*/
+
+ 
+
+  
+ 
+
+  
+ 
